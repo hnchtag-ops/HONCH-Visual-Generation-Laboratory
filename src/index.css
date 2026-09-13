@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --color-gold: #d4af37;
+  --color-gold-light: #f4e09f;
+  --color-gold-dark: #8c7120;
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  .font-sans-ui {
+    font-family: 'Inter', sans-serif;
+  }
+  .font-mono-spec {
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .tracking-commercial-headline {
+    letter-spacing: -0.04em;
+  }
+  .tracking-commercial-hero {
+    letter-spacing: -0.05em;
+  }
+  .tracking-commercial-tight {
+    letter-spacing: -0.025em;
+  }
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #f4e09f 0%, #d4af37 50%, #aa8524 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .bg-gold-glow {
+    box-shadow: 0 0 35px -5px rgba(212, 175, 55, 0.15);
+  }
+  .border-commercial-accent {
+    border-color: rgba(212, 175, 55, 0.25);
+  }
+}
+
+/* Custom dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0d0e;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}

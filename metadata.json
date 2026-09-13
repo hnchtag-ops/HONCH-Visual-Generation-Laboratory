@@ -1,0 +1,6 @@
+{
+  "name": "HONCH Visual Generation Laboratory",
+  "description": "A visual generation laboratory that transforms user concepts into production-grade editorial photographs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
